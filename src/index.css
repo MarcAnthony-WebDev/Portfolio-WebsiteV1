@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Fauna+One&display=swap');
+
+/*
+Color Palette
+-#363636 dark grey
+-#df5441 orange
+-#f0a967 goldenrod
+-#e8e8e8 light grey
+-#787878 grey
+*/
+
+:root {
+
+  --dark-grey:#363636;
+  --orange:#df5441;
+  --goldenrod:#f0a967;
+  --light-grey:#e8e8e8;
+  --grey:#787878
+  
+  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  background: rgb(54,54,54);
+background: linear-gradient(105deg, rgba(54,54,54,1) 0%, rgba(120,120,120,1) 100%);
+
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(
+    105deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(201, 186, 170, 1) 37%,
+    rgba(234, 231, 220, 1) 100%
+  ); */
+  font-size: 62.5%;
+}
+
+/* @media (max-width: 850px) {
+  :root {
+    font-size: 50%;
+  }
+} */
