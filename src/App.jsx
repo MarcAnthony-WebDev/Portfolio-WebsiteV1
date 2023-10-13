@@ -6,8 +6,11 @@ import { styles } from './AppStyles';
 import { motion } from 'framer-motion';
 
 import Home from './components/Home/Home';
-import { BrowserNotSupported } from '@mui/icons-material';
+
 import Start from './components/Start/Start';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const classes = styles();
@@ -40,6 +43,9 @@ function App() {
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='/Start' element={<Start />} />
+                  <Route path='About' element={<About />} />
+                  <Route path='/Projects' element={<Projects />} />
+                  <Route path='/Contact' element={<Contact />} />
                 </Routes>
               </FadeInWhenVisible>
             </div>

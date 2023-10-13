@@ -15,7 +15,8 @@ export const styles = createUseStyles({
       fontFamily: 'Electrolize',
       fontWeight: '400',
       fontSize: 'clamp(8rem, 12vw, 30rem)',
-      color: 'var(--green)',
+      color: 'var(--primary-color)',
+      textShadow: '10px 10px 2px var(--secondary-color)',
     },
   },
   homeContainerText: {
@@ -44,5 +45,21 @@ export const styles = createUseStyles({
     fontFamily: 'Electrolize',
     fontSize: '3rem',
     padding: '3rem 6rem',
+
+    animation: '$blink 1.5s cubic-bezier(1,.06,.96,.29) infinite',
+  },
+
+  '@keyframes blink': {
+    '0%': {
+      opacity: '1',
+    },
+
+    '80%': {
+      opacity: '0',
+    },
+
+    '100%': {
+      opacity: '0',
+    },
   },
 });

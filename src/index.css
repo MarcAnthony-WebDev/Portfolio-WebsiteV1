@@ -28,6 +28,17 @@ New color palette???????
   --grey: #787878;
   --green: #37fd12;
 
+  /* 
+  Neon Color Palette
+  Robin egg blue : #46D7E2
+  Razzmatazz : #E72B6B  
+  Saffron : #F3C036
+  */
+
+  --primary-color: #46d7e2;
+  --secondary-color: #e72b6b;
+  --tertiary-color: #f3c036;
+
   /* background: rgb(54,54,54);
 background: linear-gradient(105deg, rgba(54,54,54,1) 0%, rgba(120,120,120,1) 100%); */
 
