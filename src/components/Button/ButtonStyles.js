@@ -2,12 +2,13 @@ import { createUseStyles } from 'react-jss';
 
 export const styles = createUseStyles({
   btn: {
-    border: 'none',
-    padding: '1rem 2rem',
+    fontSize: '2rem',
+    border: '1px solid white',
+    padding: '1rem 3rem',
     cursor: 'pointer',
-    backgroundColor: 'var(--light-grey)',
+    backgroundColor: 'transparent',
     borderRadius: '5px',
-    fontFamily: 'Fauna One',
-    color: 'var(--dark-grey)',
+    fontFamily: 'Gemunu Libre',
+    color: 'var(--white-smoke)',
   },
 });

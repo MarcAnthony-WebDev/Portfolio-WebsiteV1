@@ -1,10 +1,15 @@
 import { createUseStyles } from 'react-jss';
 
 export const styles = createUseStyles({
-  linksContainer: {},
+  linksContainer: {
+    width: 'clamp(30rem, 50%, 60rem)',
+    padding: '2rem',
+    marginTop: 'auto',
+  },
   linksList: {
+    padding: '0',
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     listStyle: 'none',
   },
@@ -14,8 +19,6 @@ export const styles = createUseStyles({
     alignItems: 'center',
     height: '5rem',
     width: '5rem',
-    borderRadius: '50%',
-    backgroundColor: 'var(--dark-grey)',
   },
   linksLink: {
     height: '100%',

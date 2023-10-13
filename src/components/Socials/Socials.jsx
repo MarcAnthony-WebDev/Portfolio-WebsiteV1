@@ -1,11 +1,12 @@
 // import React from 'react';
-import { styles } from './LinksStyles';
+import { styles } from './SocialsStyles';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
-const Links = () => {
+const Socials = () => {
   const classes = styles();
 
   return (
@@ -19,7 +20,7 @@ const Links = () => {
             rel='noreferrer'
           >
             <GitHubIcon
-              sx={{ height: '100%', width: '100%', fill: 'var(--orange)' }}
+              sx={{ height: '100%', width: '100%', fill: 'var(--green)' }}
             />
           </a>
         </li>
@@ -31,7 +32,7 @@ const Links = () => {
             rel='noreferrer'
           >
             <LinkedInIcon
-              sx={{ height: '100%', width: '100%', fill: 'var(--orange)' }}
+              sx={{ height: '100%', width: '100%', fill: 'var(--green)' }}
             />
           </a>
         </li>
@@ -43,7 +44,19 @@ const Links = () => {
             rel='noreferrer'
           >
             <EmailIcon
-              sx={{ height: '100%', width: '100%', fill: 'var(--orange)' }}
+              sx={{ height: '100%', width: '100%', fill: 'var(--green)' }}
+            />
+          </a>
+        </li>
+        <li className={classes.linksItem}>
+          <a
+            href='mailto:marcanthony.webdev@gmail.com'
+            className={classes.linkslink}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <TwitterIcon
+              sx={{ height: '100%', width: '100%', fill: 'var(--green)' }}
             />
           </a>
         </li>
@@ -52,4 +65,4 @@ const Links = () => {
   );
 };
 
-export default Links;
+export default Socials;
