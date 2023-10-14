@@ -22,7 +22,7 @@ const Button = ({ text, link }) => {
         backgroundColor: 'var(--secondary-color)',
         transition: { duration: 0.3 },
       }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.5 }}
       className={classes.btn}
     >
       <Link to={link} className={classes.btnLink}>

@@ -71,5 +71,7 @@ export const styles = createUseStyles({
     textDecoration: 'none',
     color: 'white',
     fontFamily: 'Electrolize',
+    display: 'block',
+    width: '100%',
   },
 });

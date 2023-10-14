@@ -1,6 +1,6 @@
 import Button from '../Button/Button';
 import { styles } from './StartStyles';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Start = () => {
   const classes = styles();
