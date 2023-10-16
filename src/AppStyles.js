@@ -29,11 +29,13 @@ export const styles = createUseStyles({
     borderRadius: '10% / 20%',
   },
   appWindow: {
+    // position: 'relative',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundImage: 'repeating-conic-gradient(#1a1a1a,black 0.00013%)',
     backgroundColor: 'white',
+    overflow: 'hidden',
 
     animation: '$tvStatic 2s linear infinite',
     height: '85%',

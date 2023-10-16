@@ -1,6 +1,5 @@
 import Button from '../Button/Button';
 import { styles } from './StartStyles';
-// import { Link } from 'react-router-dom';
 
 const Start = () => {
   const classes = styles();
@@ -11,6 +10,7 @@ const Start = () => {
         <h1>Start Menu</h1>
       </div>
       <div className={classes.startContainerBtns}>
+        <Button link='/' text='Home' />
         <Button link='/About' text='About' />
         <Button link='/Projects' text='Projects' />
         <Button link='/Contact' text='Contact' />

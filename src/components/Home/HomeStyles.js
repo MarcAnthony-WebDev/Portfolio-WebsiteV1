@@ -14,7 +14,7 @@ export const styles = createUseStyles({
     '& h1': {
       fontFamily: 'Electrolize',
       fontWeight: '400',
-      fontSize: 'clamp(8rem, 12vw, 30rem)',
+      fontSize: 'clamp(8rem, 12vw, 18rem)',
       color: 'var(--primary-color)',
       textShadow: '10px 10px 2px var(--secondary-color)',
     },

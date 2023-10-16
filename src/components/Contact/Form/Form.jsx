@@ -1,5 +1,6 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Button from '../../Button/Button';
 
 import { styles } from './FormStyles';
 import { motion } from 'framer-motion';
@@ -54,7 +55,7 @@ const Form = () => {
           }}
           transition={{ duration: 0.7 }}
         >
-          Name
+          Name:
         </motion.label>
         <motion.input
           initial={{
@@ -85,7 +86,7 @@ const Form = () => {
           }}
           transition={{ duration: 1 }}
         >
-          Email
+          Email:
         </motion.label>
         <motion.input
           initial={{
@@ -117,7 +118,7 @@ const Form = () => {
           }}
           transition={{ duration: 1.25 }}
         >
-          Message
+          Message:
         </motion.label>
         <motion.textarea
           initial={{
@@ -136,7 +137,8 @@ const Form = () => {
           cols='50'
           maxLength='750'
         />
-        <input type='submit' value='Send Email' />
+        <input className={classes.inputBtn} type='submit' value='Send Email' />
+        {/* <Button type='submit' value='Send Email' text='Submit' /> */}
       </form>
     </>
   );

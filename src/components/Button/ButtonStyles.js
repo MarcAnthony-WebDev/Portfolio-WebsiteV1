@@ -7,7 +7,7 @@ export const styles = createUseStyles({
     fontSize: 'clamp(3.6vmin, 5vmin , 2.5vmax)',
     letterSpacing: '2px',
     border: '1px solid var(--primary-color)',
-    padding: '1rem 10rem',
+    // padding: '1rem 10rem',
     cursor: 'pointer',
     backgroundColor: 'transparent',
     borderRadius: '5px',
@@ -22,6 +22,10 @@ export const styles = createUseStyles({
     width: '55vmin',
 
     margin: '1rem auto',
+
+    '& :hover': {
+      backgroundColor: 'var(--secondary-color)',
+    },
     // transition: '.3s all',
 
     // '&:before': {
