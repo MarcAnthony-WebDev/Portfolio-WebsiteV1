@@ -7,14 +7,14 @@ import { motion } from 'framer-motion';
 const buttonVariants = {
   initial: {
     opacity: 0,
-    // x: -500,
+
     scale: 0.01,
   },
   animate: {
     opacity: 1,
-    // x: 0,
+
     scale: 1,
-    transition: { duration: 1.5 },
+    transition: { duration: 0.8 },
   },
   hover: {
     backgroundColor: 'var(--secondary-color)',

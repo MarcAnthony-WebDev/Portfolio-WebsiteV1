@@ -37,6 +37,7 @@ export const styles = createUseStyles({
   },
 
   input: {
+    color: 'var(--white-smoke)',
     marginBottom: '1rem',
     backgroundColor: '#212121',
     maxWidth: '100%',
@@ -46,7 +47,7 @@ export const styles = createUseStyles({
     borderRadius: '.5rem',
 
     '&:focus': {
-      color: 'var(--primary-color)',
+      color: 'var(--white-smoke)',
       backgroundColor: 'var(--secondary-color)',
       outlineColor: 'var(--primary-color)',
       boxShadow: '-3px -3px 15px var(--primary-color)',

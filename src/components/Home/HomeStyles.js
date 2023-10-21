@@ -31,7 +31,8 @@ export const styles = createUseStyles({
   },
 
   homeContainerTextIntro: {
-    fontSize: 'clamp(1.6rem, 2.5vw, 4rem)',
+    fontSize: 'clamp(2.4rem, 3vw, 4rem)',
+    fontFamily: 'Gemunu Libre, sans-serif',
     color: 'var(--tertiary-color)',
     textAlign: 'center',
   },

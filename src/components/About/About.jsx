@@ -1,8 +1,5 @@
 import { styles } from './AboutStyles';
 import { motion } from 'framer-motion';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-// import Asteroid from '../Asteroid/Asteroid';
-import { Link } from 'react-router-dom';
 
 import ArrowBack from '../ArrowBack/ArrowBack';
 

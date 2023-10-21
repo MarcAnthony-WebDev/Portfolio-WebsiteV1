@@ -9,10 +9,7 @@ const ArrowBack = (props) => {
   return (
     <>
       <Link to='/Start'>
-        <ArrowBackIcon
-          sx={{ top: `${props.top}` }}
-          className={classes.arrowBack}
-        />
+        <ArrowBackIcon className={classes.arrowBack} />
       </Link>
     </>
   );

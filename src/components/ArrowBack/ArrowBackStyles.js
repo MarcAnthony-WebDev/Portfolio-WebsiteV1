@@ -3,12 +3,12 @@ import { createUseStyles } from 'react-jss';
 export const styles = createUseStyles({
   arrowBack: {
     position: 'absolute',
-    top: '40px',
-    left: '10px',
+    top: '10px',
+    left: '0px',
     color: 'var(--primary-color)',
     height: '4rem',
     width: '4rem',
-    fontSize: '2vw',
+    fontSize: '4rem',
     '&:hover': {
       cursor: 'pointer',
       color: 'var(--secondary-color)',
