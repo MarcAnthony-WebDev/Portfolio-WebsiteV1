@@ -8,8 +8,8 @@ import { createUseStyles } from 'react-jss';
 
 export const styles = createUseStyles({
   appOuter: {
-    height: '90vh',
-    width: '90vw',
+    height: '95vh',
+    width: '95vw',
     border: '2rem ridge #65048c',
     borderRadius: '.5rem',
     backgroundColor: '#000',
@@ -27,6 +27,9 @@ export const styles = createUseStyles({
     height: '100%',
     width: '100%',
     borderRadius: '10% / 20%',
+    '@media (max-width: 600px)': {
+      borderRadius: '10% / 10%',
+    },
   },
   appWindow: {
     // position: 'relative',

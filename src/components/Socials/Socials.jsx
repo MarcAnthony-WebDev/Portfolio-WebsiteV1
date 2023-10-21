@@ -80,7 +80,7 @@ const Socials = () => {
           <motion.a
             whileHover={hoverEffect}
             whileTap={tapEffect}
-            href='mailto:marcanthony.webdev@gmail.com'
+            href='https://twitter.com/MarcTumminello'
             className={classes.linkslink}
             target='_blank'
             rel='noreferrer'

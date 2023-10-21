@@ -14,9 +14,10 @@ export const styles = createUseStyles({
     '& h1': {
       fontFamily: 'Electrolize',
       fontWeight: '400',
-      fontSize: 'clamp(8rem, 12vw, 18rem)',
+      fontSize: 'clamp(6rem, 10vw, 16rem)',
       color: 'var(--primary-color)',
       textShadow: '10px 10px 2px var(--secondary-color)',
+      marginBottom: 'auto',
     },
   },
   homeContainerText: {
@@ -25,10 +26,14 @@ export const styles = createUseStyles({
     alignItems: 'center',
     height: '20vh',
     flexDirection: 'column',
-    '& p': {
-      fontSize: '2.1rem',
-    },
+
     marginBottom: 'auto',
+  },
+
+  homeContainerTextIntro: {
+    fontSize: 'clamp(1.6rem, 2.5vw, 4rem)',
+    color: 'var(--tertiary-color)',
+    textAlign: 'center',
   },
 
   homeContainerBtns: {
@@ -45,6 +50,7 @@ export const styles = createUseStyles({
     fontFamily: 'Electrolize',
     fontSize: '3rem',
     padding: '3rem 6rem',
+    whiteSpace: 'nowrap',
 
     animation: '$blink 1.5s cubic-bezier(1,.06,.96,.29) infinite',
   },

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { styles } from './HomeStyles';
 
 import Socials from '../Socials/Socials';
+import { collapseClasses } from '@mui/material';
 
 const Home = () => {
   const classes = styles();
@@ -14,7 +15,9 @@ const Home = () => {
       <div className={classes.homeContainer}>
         <div className={classes.homeContainerText}>
           <h1>Welcome</h1>
-          <p>I am Marcanthony, a React Developer</p>
+          <p className={classes.homeContainerTextIntro}>
+            I&apos;m Marcanthony, a React Developer.
+          </p>
         </div>
 
         <div className={classes.homeContainerStart}>

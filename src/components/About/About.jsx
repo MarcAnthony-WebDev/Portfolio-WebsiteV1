@@ -1,6 +1,30 @@
 import { styles } from './AboutStyles';
 import { motion } from 'framer-motion';
 
+// import Asteroid from '../Asteroid/Asteroid';
+
+const skills = ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Axiom', 'Framer'];
+
+const listItemVariantsA = {
+  initial: {
+    y: [4, -4, 4, -4, 4, -4],
+  },
+  animate: {
+    y: [-4, 4, -4, 4, -4, 4, -4],
+    transition: { duration: 2, repeat: Infinity },
+  },
+};
+
+const listItemVariantsB = {
+  initial: {
+    y: [-4, 4, -4, 4, -4, 4],
+  },
+  animate: {
+    y: [4, -4, 4, -4, 4, -4, 4],
+    transition: { duration: 2, repeat: Infinity },
+  },
+};
+
 const About = () => {
   const classes = styles();
 
@@ -38,35 +62,50 @@ const About = () => {
             className={`${classes.avatar}`}
           ></motion.div>
         </div>
-        <div className={classes.aboutContentText}>
-          <motion.p
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, type: 'spring' }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Vulputate ut pharetra sit amet aliquam id diam. Sed egestas egestas
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, type: 'spring' }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Vulputate ut pharetra sit amet aliquam id diam. Sed egestas egestas
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2, type: 'spring' }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Vulputate ut pharetra sit amet aliquam id diam. Sed egestas egestas
-          </motion.p>
-        </div>
+        <section className={classes.aboutContentSection}>
+          <div className={classes.aboutContentText}>
+            <motion.p
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, type: 'spring' }}
+            >
+              Growing up in the 90s, I was captivated by the internet. From the
+              early days of dial-up connections to the ever-evolving digital
+              landscape we know today, my passion for web development and design
+              was ignited.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2, type: 'spring' }}
+            >
+              As the internet continued to transform, so did my own journey. As
+              an adult, I immersed myself in coding, user experience, and more,
+              driven by an unending curiosity. My fascination with this
+              boundless online world remains an enduring source of inspiration.
+            </motion.p>
+          </div>
+          <div className={classes.aboutContentSkills}>
+            <h3 className={classes.aboutContentSkillsHeading}>Skills</h3>
+            <ul className={classes.aboutContentSkillsList}>
+              {skills.map((skill, index) => {
+                return (
+                  <motion.li
+                    variants={
+                      index % 2 === 0 ? listItemVariantsA : listItemVariantsB
+                    }
+                    initial='initial'
+                    animate='animate'
+                    key={skill}
+                    className={classes.aboutContentSkillsItem}
+                  >
+                    {skill}
+                  </motion.li>
+                );
+              })}
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   );

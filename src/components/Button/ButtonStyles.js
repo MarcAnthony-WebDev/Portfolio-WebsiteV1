@@ -23,9 +23,9 @@ export const styles = createUseStyles({
 
     margin: '1rem auto',
 
-    '& :hover': {
-      backgroundColor: 'var(--secondary-color)',
-    },
+    // '& :hover': {
+    //   backgroundColor: 'var(--secondary-color)',
+    // },
     // transition: '.3s all',
 
     // '&:before': {
