@@ -32,7 +32,7 @@ export const styles = createUseStyles({
     },
   },
   appWindow: {
-    // position: 'relative',
+    position: 'relative',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

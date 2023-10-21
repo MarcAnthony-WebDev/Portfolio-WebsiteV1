@@ -2,7 +2,7 @@ import Heading from '../Heading/Heading';
 import { styles } from './ProjectsStyles';
 import { projectsData } from './ProjectsData';
 import ProjectsButton from '../ProjectsButton/ProjectsButton';
-import { Link } from 'react-router-dom';
+import ArrowBack from '../ArrowBack/ArrowBack';
 
 import { motion } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
@@ -39,6 +39,7 @@ const Projects = () => {
 
   return (
     <div className={classes.projectsContainer}>
+      <ArrowBack />
       <Heading text='Projects' />
       <motion.div
         whileTap={{ cursor: 'grabbing' }}

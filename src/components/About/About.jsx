@@ -1,7 +1,10 @@
 import { styles } from './AboutStyles';
 import { motion } from 'framer-motion';
-
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 // import Asteroid from '../Asteroid/Asteroid';
+import { Link } from 'react-router-dom';
+
+import ArrowBack from '../ArrowBack/ArrowBack';
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Axiom', 'Framer'];
 
@@ -43,6 +46,7 @@ const About = () => {
 
   return (
     <div className={classes.aboutContainer}>
+      <ArrowBack />
       <h1 className={classes.aboutHeading}>About Me</h1>
       <div className={classes.aboutContent}>
         <div className={classes.aboutContentImage}>

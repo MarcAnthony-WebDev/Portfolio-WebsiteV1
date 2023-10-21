@@ -12,7 +12,7 @@ export const styles = createUseStyles({
   formHeading: {
     fontFamily: 'Electrolize',
     fontWeight: '400',
-    fontSize: 'clamp(5rem, 12vw, 18rem)',
+    fontSize: 'clamp(5rem, 10vw, 18rem)',
     color: 'var(--primary-color)',
     textShadow: '10px 10px 2px var(--secondary-color)',
   },

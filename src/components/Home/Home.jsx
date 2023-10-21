@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { styles } from './HomeStyles';
 
 import Socials from '../Socials/Socials';
-import { collapseClasses } from '@mui/material';
 
 const Home = () => {
   const classes = styles();
