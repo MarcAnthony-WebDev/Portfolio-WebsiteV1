@@ -1,4 +1,5 @@
 import { createUseStyles } from 'react-jss';
+import img1 from '../../Images/Portfolio_photoPixel2.png';
 
 export const styles = createUseStyles({
   aboutContainer: {
@@ -40,7 +41,8 @@ export const styles = createUseStyles({
 
   avatar: {
     display: 'block',
-    backgroundImage: 'url(src/Images/Portfolio_photoPixel2.png)',
+    backgroundImage:
+      'url(src/Images/Portfolio_photoPixel2.png), url(../../Images/Portfolio_photoPixel2.png)',
     height: '100%',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

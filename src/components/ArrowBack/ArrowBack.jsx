@@ -3,7 +3,7 @@ import { styles } from './ArrowBackStyles';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-const ArrowBack = (props) => {
+const ArrowBack = () => {
   const classes = styles();
 
   return (
